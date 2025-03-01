@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>2xl</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger 2XL Audio Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Story Selection Dropdown -->
+    <div class="story-selector-container">
+        <label for="storySelector">Choose a story:</label>
+        <select id="storySelector" onchange="changeStory()">
+            <option value="jurassic">Jurassic Park: Chaos in Jurassic Park</option>
+            <option value="batmanCarnival">Batman: Carnival of Crime</option>
+            <option value="talesCryptkeeper">Tales from the Cryptkeeper: If Wishes Were Hornets</option>
+            <option value="batmanSizzling">Batman: The Sizzling Scheme</option>
+        </select>
+    </div>
+
+    <!-- Story Title -->
+    <h2 id="storyTitle">Batman: The Sizzling Scheme</h2>
+
+    <!-- Audio elements for each track -->
+    <audio id="track1"></audio>
+    <audio id="track2"></audio>
+    <audio id="track3"></audio>
+    <audio id="track4"></audio>
+
+    <!-- Buttons for user choices -->
+    <div class="button-container">
+        <button onclick="playTrack(0)">1 (Q; Yes)</button>
+        <button onclick="playTrack(1)">2 (A; No)</button>
+        <button onclick="playTrack(2)">3 (B; True)</button>
+        <button onclick="playTrack(3)">4 (C; False)</button>
+    </div>
+
+    <!-- Playback controls -->
+    <div class="playback-controls">
+        <button class="play-pause" onclick="togglePlayPause()">Play/Pause</button>
+        <input id="timeControl" type="range" min="0" max="100" step="1" value="0" onchange="seekTrack()">
+        <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="1" onchange="adjustVolume()">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
